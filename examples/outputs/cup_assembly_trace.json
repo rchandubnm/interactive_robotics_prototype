@@ -1,0 +1,129 @@
+{
+  "instruction": "Assemble the cup",
+  "status": "complete",
+  "step_index": 3,
+  "selected": {
+    "cup": "C2",
+    "lid": "L1",
+    "straw": "S2"
+  },
+  "completed": [
+    {
+      "step": 1,
+      "skill": "position_cup",
+      "part": "cup",
+      "object_id": "C2",
+      "status": "simulated",
+      "description": "Pick up the cup and place it at the assembly station"
+    },
+    {
+      "step": 2,
+      "skill": "attach_lid",
+      "part": "lid",
+      "object_id": "L1",
+      "status": "simulated",
+      "description": "Pick up the lid and place it onto the cup"
+    },
+    {
+      "step": 3,
+      "skill": "insert_straw",
+      "part": "straw",
+      "object_id": "S2",
+      "status": "simulated",
+      "description": "Pick up the straw and insert it through the lid opening"
+    }
+  ],
+  "events": [
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "Assemble the cup"
+    },
+    {
+      "speaker": "robot",
+      "kind": "plan",
+      "text": "I can assemble a cup in **3 steps**:\n\n**Step 1:** Pick up the cup and place it at the assembly station.\n\n**Step 2:** Pick up the lid and attach it to the cup.\n\n**Step 3:** Pick up the straw and insert it through the lid.\n\nI will ask which part you mean when needed, and **wait for your approval before each step**. This is a simulated assembly, not real robot movement."
+    },
+    {
+      "speaker": "robot",
+      "kind": "choose_part",
+      "text": "Step 1: I see 2 possible cups: C1: red cup, C2: blue cup. Which cup should I use? You can answer with the color, left/right, or object ID."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "blue cup"
+    },
+    {
+      "speaker": "robot",
+      "kind": "approve",
+      "text": "**Step 1 of 3:** Pick up the cup and place it at the assembly station.\n\nSelected: **C2: blue cup**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "yes"
+    },
+    {
+      "speaker": "robot",
+      "kind": "step_complete",
+      "text": "\u2705 Step 1 simulated: pick up the cup and place it at the assembly station using **C2: blue cup**."
+    },
+    {
+      "speaker": "robot",
+      "kind": "choose_part",
+      "text": "Step 2: I see 2 possible lids: L1: white lid, L2: black lid. Which lid should I use? You can answer with the color, left/right, or object ID."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "white lid"
+    },
+    {
+      "speaker": "robot",
+      "kind": "approve",
+      "text": "**Step 2 of 3:** Pick up the lid and place it onto the cup.\n\nSelected: **L1: white lid**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "yes"
+    },
+    {
+      "speaker": "robot",
+      "kind": "step_complete",
+      "text": "\u2705 Step 2 simulated: pick up the lid and place it onto the cup using **L1: white lid**."
+    },
+    {
+      "speaker": "robot",
+      "kind": "choose_part",
+      "text": "Step 3: I see 2 possible straws: S1: yellow straw, S2: green straw. Which straw should I use? You can answer with the color, left/right, or object ID."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "green straw"
+    },
+    {
+      "speaker": "robot",
+      "kind": "approve",
+      "text": "**Step 3 of 3:** Pick up the straw and insert it through the lid opening.\n\nSelected: **S2: green straw**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component."
+    },
+    {
+      "speaker": "user",
+      "kind": "reply",
+      "text": "yes"
+    },
+    {
+      "speaker": "robot",
+      "kind": "step_complete",
+      "text": "\u2705 Step 3 simulated: pick up the straw and insert it through the lid opening using **S2: green straw**."
+    },
+    {
+      "speaker": "robot",
+      "kind": "complete",
+      "text": "\u2705 **Assembly complete in simulation.** The cup, lid and straw were processed in order, with human confirmation at each step."
+    }
+  ],
+  "simulation_only": true
+}

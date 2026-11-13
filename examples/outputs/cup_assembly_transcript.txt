@@ -1,0 +1,34 @@
+USER: Assemble the cup
+ROBOT: I can assemble a cup in **3 steps**:
+
+**Step 1:** Pick up the cup and place it at the assembly station.
+
+**Step 2:** Pick up the lid and attach it to the cup.
+
+**Step 3:** Pick up the straw and insert it through the lid.
+
+I will ask which part you mean when needed, and **wait for your approval before each step**. This is a simulated assembly, not real robot movement.
+ROBOT: Step 1: I see 2 possible cups: C1: red cup, C2: blue cup. Which cup should I use? You can answer with the color, left/right, or object ID.
+USER: blue cup
+ROBOT: **Step 1 of 3:** Pick up the cup and place it at the assembly station.
+
+Selected: **C2: blue cup**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+USER: yes
+ROBOT: ✅ Step 1 simulated: pick up the cup and place it at the assembly station using **C2: blue cup**.
+ROBOT: Step 2: I see 2 possible lids: L1: white lid, L2: black lid. Which lid should I use? You can answer with the color, left/right, or object ID.
+USER: white lid
+ROBOT: **Step 2 of 3:** Pick up the lid and place it onto the cup.
+
+Selected: **L1: white lid**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+USER: yes
+ROBOT: ✅ Step 2 simulated: pick up the lid and place it onto the cup using **L1: white lid**.
+ROBOT: Step 3: I see 2 possible straws: S1: yellow straw, S2: green straw. Which straw should I use? You can answer with the color, left/right, or object ID.
+USER: green straw
+ROBOT: **Step 3 of 3:** Pick up the straw and insert it through the lid opening.
+
+Selected: **S2: green straw**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+USER: yes
+ROBOT: ✅ Step 3 simulated: pick up the straw and insert it through the lid opening using **S2: green straw**.
+ROBOT: ✅ **Assembly complete in simulation.** The cup, lid and straw were processed in order, with human confirmation at each step.
+
+Results written to /mnt/data/interactive_robotics_demo_v5/examples/outputs

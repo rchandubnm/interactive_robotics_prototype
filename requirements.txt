@@ -1,0 +1,9 @@
+# Keep your already functioning CUDA-enabled PyTorch; this file does not install it.
+streamlit>=1.42,<2
+streamlit-webrtc>=0.69.5,<1
+ultralytics>=8.3,<9
+opencv-python>=4.8,<5
+numpy>=1.26,<3
+pillow>=10,<13
+requests>=2.31,<3
+pytest>=8,<10

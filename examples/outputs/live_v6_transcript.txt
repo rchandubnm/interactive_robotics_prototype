@@ -1,0 +1,53 @@
+Human: What can you see?
+
+Robot: I can detect 2 cups, 2 lids, 2 straws, 1 tray. You can ask me about them or give an instruction. For detailed questions about glasses, clothing, or relationships, enable the local vision model.
+
+Human: Assemble the cup
+
+Robot: I can assemble a cup in **3 steps**:
+
+**Step 1:** Pick up the cup and place it at the assembly station.
+
+**Step 2:** Pick up the lid and attach it to the cup.
+
+**Step 3:** Pick up the straw and insert it through the lid.
+
+I will ask which part you mean when needed, and **wait for your approval before each step**. This is a simulated assembly, not real robot movement.
+
+Robot: Step 1: I see 2 possible cups: C1: red cup, C2: blue cup. Which cup should I use? You can answer with the color, left/right, or object ID.
+
+Human: blue cup
+
+Robot: **Step 1 of 3:** Pick up the cup and place it at the assembly station.
+
+Selected: **C2: blue cup**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+
+Human: yes
+
+Robot: ✅ Step 1 simulated: pick up the cup and place it at the assembly station using **C2: blue cup**.
+
+Robot: Step 2: I see 2 possible lids: L1: white lid, L2: black lid. Which lid should I use? You can answer with the color, left/right, or object ID.
+
+Human: white lid
+
+Robot: **Step 2 of 3:** Pick up the lid and place it onto the cup.
+
+Selected: **L1: white lid**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+
+Human: yes
+
+Robot: ✅ Step 2 simulated: pick up the lid and place it onto the cup using **L1: white lid**.
+
+Robot: Step 3: I see 2 possible straws: S1: yellow straw, S2: green straw. Which straw should I use? You can answer with the color, left/right, or object ID.
+
+Human: green straw
+
+Robot: **Step 3 of 3:** Pick up the straw and insert it through the lid opening.
+
+Selected: **S2: green straw**. Shall I proceed with this step? Reply **yes**, **no**, ask **what next?**, or request a different component.
+
+Human: yes
+
+Robot: ✅ Step 3 simulated: pick up the straw and insert it through the lid opening using **S2: green straw**.
+
+Robot: ✅ **Assembly complete in simulation.** The cup, lid and straw were processed in order, with human confirmation at each step.
