@@ -11,3 +11,17 @@ runs/
 *.pth
 *.onnx
 *.gguf
+.venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+runs/
+*.pt
+*.pth
+*.onnx
+*.gguf
+data/private/
